@@ -4,15 +4,14 @@ from math import *
 
 def setup_and_initialize():
     """The "setup_and_initialize" function does just that: sets up the graphics window, asks the user for some values to begin the program with, and returns those values to the main program. There is not yet any error checking: the Outer Radius must be less than 400, the Inner Radius must be less than the Outer Radius."""
-
     window = GraphWin("Spirograph-TM!", 800, 800)
     window.setCoords(-400.0,-400.0,400.0,400.0)
     window.setBackground("black")
-    title = Text(Point(0,100),"spirograph-er")
+    title = Text(Point(0,100),"Hypocycloid!")
     title.setSize(24)
     title.setFill("white")
     title.draw(window)
-    tag = Text(Point(0,50),"This program draws spirograph/hypocycloid-style pictures!")
+    tag = Text(Point(0,50),"This program draws Spirograph-style pictures!")
     tag.setFill("white")
     tag.draw(window)
     prompt_a = Text(Point(-100,0),"Outer radius a?")
